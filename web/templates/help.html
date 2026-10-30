@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Help — Bird Species Identifier</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="page page-help">
+      <nav class="page-nav">
+        <a class="nav-link" href="/">Back</a>
+      </nav>
+      <h1>Help</h1>
+      <p>
+        The model reads <strong>312 binary attribute flags</strong> per bird photo (shape, color,
+        habitat cues) and predicts one of <strong>200 species</strong>. Training uses 8,000
+        attribute rows; your picks come from the remaining holdout set.
+      </p>
+      <p>
+        Choose a sample chip or enter an image ID, then <strong>Classify</strong>. Compare the top
+        predicted species with the known label shown after scoring.
+      </p>
+      <p>
+        First launch trains a random forest and caches it under <code>web/data/cache</code>. If
+        metadata files are missing, run <code>python scripts/fetch_cub_metadata.py</code> from the
+        demo root.
+      </p>
+    </main>
+  </body>
+</html>

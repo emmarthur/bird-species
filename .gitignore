@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+web/.venv/
+web/data/cache/
+data/CUB_200_2011/attributes/
+.DS_Store
+.env
+.env*.local
